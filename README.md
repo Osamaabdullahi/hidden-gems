@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hidden Gems - Discover Amazing Travel Destinations
 
-## Getting Started
+![Hidden Gems Logo](public/og-image.jpg)
 
-First, run the development server:
+Hidden Gems is a modern travel discovery platform that helps users explore and save unique destinations around the world. Built with Next.js and powered by a robust backend API, it provides a seamless experience for travel enthusiasts to discover hidden travel spots.
+
+## ✨ Features
+
+- **Destination Discovery**: Browse through carefully curated travel destinations
+- **Smart Categories**: Filter destinations by categories like Safari, Beach, Mountain, etc.
+- **Personal Collections**: Save your favorite destinations for future reference
+- **Rich Details**: Get comprehensive information about each destination including:
+  - Best times to visit
+  - Admission fees
+  - Contact information
+  - User ratings
+  - Top features
+  - Location details
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+- Backend API running (separate repository)
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git https://github.com/Osamaabdullahi/hidden-gems
+cd hiddengems
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Create a `.env.local` file in the root directory:
+
+```env
+NEXT_PUBLIC_BACKEND_URL=http://127.0.0.1:8000
+```
+
+4. Start the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) to view the application
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠️ Built With
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Next.js 14](https://nextjs.org/) - The React Framework
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Zustand](https://github.com/pmndrs/zustand) - State Management
+- [Framer Motion](https://www.framer.com/motion/) - Animations
+- [Lucide Icons](https://lucide.dev/) - Icons
+- [Sonner](https://sonner.emilkowal.ski/) - Toast Notifications
 
-## Learn More
+## 📱 Screenshots
 
-To learn more about Next.js, take a look at the following resources:
+[Add screenshots of your application here]
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔒 Environment Variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The following environment variables are required:
 
-## Deploy on Vercel
+```env
+NEXT_PUBLIC_BACKEND_URL=your_backend_api_url
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📖 API Documentation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The application interacts with the following key endpoints:
+
+- `GET /api/destinations` - Fetch all destinations
+- `GET /api/destinations?category={category}` - Fetch destinations by category
+- `GET /api/destinations/{id}` - Fetch single destination details
+- `POST /api/login` - User authentication
+- `POST /api/signup` - User registration
+
+## 🚀 Deployment
+
+This application is optimized for deployment on Vercel:
+
+1. Push your code to GitHub
+2. Import your repository to Vercel
+3. Set up your environment variables
+4. Deploy!
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👏 Acknowledgments
+
+- Design inspiration from Airbnb and Booking.com
+- Icons from Lucide Icons
+- Font family from Vercel (Geist)
