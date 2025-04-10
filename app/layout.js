@@ -3,7 +3,6 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Toaster } from "sonner";
-import { Analytics } from "@vercel/analytics/react";
 import { Suspense } from "react";
 
 const geistSans = localFont({
@@ -49,7 +48,6 @@ export default function RootLayout({ children }) {
             theme="light"
           />
         </Suspense>
-        <Analytics />
       </body>
     </html>
   );
