@@ -120,7 +120,7 @@ export default function Login() {
           </button>
         </form>
         <p className="text-sm text-center text-gray-600 mt-4">
-          Don't have an account?{" "}
+          <p>Don&apos;t have an account?</p>
           <a href="/auth/sighup" className="text-indigo-600 hover:underline">
             Sign Up
           </a>
