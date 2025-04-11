@@ -23,7 +23,13 @@ import { faker } from "@faker-js/faker";
 import PointsOfInterest from "../../../components/Directions";
 import Recommendation from "../../../components/Recommendation";
 
-const GalleryPlaceDetail = ({ place }) => {
+const Page = () => {
+  <GalleryPlaceDetail />;
+};
+
+export default Page;
+
+const GalleryPlaceDetail = () => {
   const [selectedImage, setSelectedImage] = useState(0);
   const [showAllImages, setShowAllImages] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
@@ -319,8 +325,6 @@ const GalleryPlaceDetail = ({ place }) => {
     </div>
   );
 };
-
-export default GalleryPlaceDetail;
 
 const ImageGallery = ({ images, mainImg }) => {
   const [selectedImage, setSelectedImage] = useState(0);
