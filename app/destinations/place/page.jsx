@@ -24,12 +24,6 @@ import PointsOfInterest from "../../../components/Directions";
 import Recommendation from "../../../components/Recommendation";
 
 const Page = () => {
-  <GalleryPlaceDetail />;
-};
-
-export default Page;
-
-const GalleryPlaceDetail = () => {
   const [selectedImage, setSelectedImage] = useState(0);
   const [showAllImages, setShowAllImages] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
@@ -326,12 +320,12 @@ const GalleryPlaceDetail = () => {
   );
 };
 
+export default Page;
+
 const ImageGallery = ({ images, mainImg }) => {
   const [selectedImage, setSelectedImage] = useState(0);
   const [showAllImages, setShowAllImages] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
-
-  console.log("_____________>", images);
 
   return (
     <div className="grid grid-cols-1 gap-2 mb-6 md:grid-cols-4 md:gap-4 md:mb-8">
@@ -503,9 +497,6 @@ const MapOfPlace = ({ handleToggleVisibility, isVisible, map_location }) => {
 
   // Example usage
   const { latitude, longitude } = extractLatLong(map_location);
-  console.log("Latitude:", latitude); // Output: -1.2641
-  console.log("Longitude:", longitude); // Output: 36.8034
-  console.log(map_location, "*******");
 
   return (
     <>
