@@ -1,3 +1,4 @@
+"use client";
 import useFetch from "./hooks/UseFetchData";
 import HeroSection from "../components/HeroSection";
 import CoolPlaces from "../components/Places";
