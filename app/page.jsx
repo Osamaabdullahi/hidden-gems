@@ -13,7 +13,7 @@ export default function Home() {
   };
 
   const { data, error, loading } = useFetch(
-    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/destinations/?category=safari`
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/destinations/?category=safari`,
   );
 
   const {
@@ -21,7 +21,7 @@ export default function Home() {
     error: err,
     loading: load,
   } = useFetch(
-    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/destinations/?category=Historical%20Sites`
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/destinations/?category=Historical%20Sites`,
   );
 
   if (loading || error || load || err) return <div>loading....</div>;

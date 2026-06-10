@@ -8,7 +8,7 @@ import Link from "next/link";
 
 function Restaurants() {
   const { data, error, loading } = useFetch(
-    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/destinations?category=Food%20and%20Drink%20Spots`
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/destinations?category=Food%20and%20Drink%20Spots`,
   );
   if (loading || error) return <div>Loading....</div>;
   return (
