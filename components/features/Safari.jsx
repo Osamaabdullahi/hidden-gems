@@ -4,8 +4,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import useFetch from "../../app/hooks/UseFetchData";
 
-function Safari({ title, tours, fadeInUp, category }) {
+function Safari({ title, fadeInUp, category, tours }) {
   return (
     <motion.section
       className="py-24 px-6 md:px-24 bg-white"

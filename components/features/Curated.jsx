@@ -1,6 +1,6 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { features } from "../../data";
+import { motion } from "framer-motion";
 
 function Curated() {
   return (
